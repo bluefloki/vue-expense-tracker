@@ -1,0 +1,26 @@
+{
+  "name": "vue-fullstack-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.2.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.4",
+    "sequelize-cli": "^6.1.0"
+  }
+}
